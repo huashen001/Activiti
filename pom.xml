@@ -86,7 +86,7 @@
     <maven-source-plugin.version>3.1.0</maven-source-plugin.version>
     <maven-surefire-plugin.version>3.0.0-M3</maven-surefire-plugin.version>
 
-    <java.version>8</java.version>
+    <java.version>1.8</java.version>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
 
@@ -308,7 +308,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>${maven-compiler-plugin.version}</version>
         <configuration>
-          <release>${java.version}</release>
+         <!-- <release>1.8</release>
+          <target>1.8</target>-->
           <showDeprecation>true</showDeprecation>
           <showWarnings>true</showWarnings>
           <optimize>true</optimize>
